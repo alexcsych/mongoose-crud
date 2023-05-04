@@ -1,0 +1,34 @@
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+  "firstName":"Testovik",
+  "lastName": "Testovikovich1",
+  "email": "test12@test.com",
+  "birthday": "1993-01-02",
+  "gender": "female",
+  "isMarried": false,
+  "workExperience": 30
+}
+
+GET http://localhost:5000/api/users
+
+GET http://localhost:5000/api/users/644e72c0e0a3c974db47eea6
+
+PATCH http://localhost:5000/api/users/644e72c0e0a3c974db47eea6
+Content-Type: application/json
+
+{
+  "firstName":"Test1000"
+}
+
+DELETE http://localhost:5000/api/users/644e77d35f0606d23fb55ac7
+
+POST http://localhost:5000/api/users/644e72c0e0a3c974db47eea6/posts
+Content-Type: application/json
+
+{
+  "body":"New post"
+}
+
+GET http://localhost:5000/api/users/644e72c0e0a3c974db47eea6/posts
