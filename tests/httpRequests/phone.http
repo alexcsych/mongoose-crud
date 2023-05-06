@@ -1,0 +1,24 @@
+POST http://localhost:5000/api/phones
+Content-Type: application/json
+
+{
+  "model": "Galaxy M33",
+  "brand": "Samsung",
+  "yearOfManufacture": 2020,
+  "ramSize": 6,
+  "nfc": true,
+  "userId": "644e72c0e0a3c974db47eea6"
+}
+
+GET http://localhost:5000/api/phones
+
+GET http://localhost:5000/api/phones/64562287077d71ada9e3e98e
+
+PATCH http://localhost:5000/api/phones/64562287077d71ada9e3e98e
+Content-Type: application/json
+
+{
+  "model": "Galaxy M22"
+}
+
+DELETE http://localhost:5000/api/phones/64562287077d71ada9e3e98e
