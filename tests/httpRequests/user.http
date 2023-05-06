@@ -32,3 +32,16 @@ Content-Type: application/json
 }
 
 GET http://localhost:5000/api/users/644e72c0e0a3c974db47eea6/posts
+
+POST http://localhost:5000/api/users/644e72c0e0a3c974db47eea6/phones
+Content-Type: application/json
+
+{
+  "model": "Galaxy M33",
+  "brand": "Samsung",
+  "yearOfManufacture": 2020,
+  "ramSize": 6,
+  "nfc": true
+}
+
+GET http://localhost:5000/api/users/644e72c0e0a3c974db47eea6/phones
